@@ -10,12 +10,12 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@Schema(title = "MEM_REQ_01 : 회원가입 요청 DTO")
+@Schema(title = "요청DTO의 title")
 public class MemberJoinRequestDto {
 
     @NotBlank(message = "사용자 이메일을 입력해주세요.")
     @Email(message = "이메일 형식에 맞지 않습니다.")
-    @Schema(description = "사용자 이메일", example = "testtest@gmail.com")
+    @Schema(description = "사용자 이메일", example = "test@gmail.com")
     private String email;
 
     @NotBlank(message = "사용자 이름을 입력해주세요.")
